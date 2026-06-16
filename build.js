@@ -20,6 +20,7 @@ const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 const cats = Object.keys(menu);
 const totaal = cats.reduce((n, c) => n + menu[c].length, 0);
+const broodjesN = (menu["Broodjes"] || []).length + (menu["Smos Broodjes"] || []).length + (menu["Speciale broodjes"] || []).length;
 
 // uitgelichte items voor de hero-kaart
 const feat = (menu["Broodjes"] || cats.map(c => menu[c]).flat()).slice();
@@ -44,7 +45,7 @@ const menuMain = cats.map((c, i) => {
         </section>`;
 }).join("");
 
-const tickerWords = ["Vers belegd", "Dagverse broodjes", "Knapperige frieten", "Met liefde gemaakt", "Ambachtelijk", "Smos & club", "Tot zo in Wilrijk"];
+const tickerWords = ["Vers belegd", "Dagverse broodjes", "Lekkere koffie", "Met liefde gemaakt", "Ambachtelijk", "Smos & club", "Croques & bagels", "Tot zo in Wilrijk"];
 const ticker = [...tickerWords, ...tickerWords].map((w) => `<span class="tk">${esc(w)}</span><span class="tk-dot">★</span>`).join("");
 
 const html = `<!DOCTYPE html>
@@ -53,7 +54,7 @@ const html = `<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Broodjes van Eden — Vers & ambachtelijk in Wilrijk</title>
-<meta name="description" content="Broodjes van Eden in Wilrijk: dagverse broodjes, smos, club, croques, frieten, snacks en meer. Vers bereid. Bestel online of kom langs aan het Edenplein.">
+<meta name="description" content="Broodjes van Eden in Wilrijk: dagverse broodjes, smos, club, croques, bagels, salades en koffie. Vers bereid. Bestel online of kom langs aan het Edenplein.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <style>
@@ -194,7 +195,7 @@ const html = `<!DOCTYPE html>
   /* cta */
   .cta{max-width:1180px;margin:60px auto 90px;padding:0 26px}
   .cta-band{background:var(--tomato);border:3px solid var(--ink);border-radius:28px;padding:54px 30px;color:#fff;box-shadow:9px 9px 0 var(--ink);text-align:center;position:relative;overflow:hidden}
-  .cta-band::after{content:"🍟🥪🍔🥖🧀";position:absolute;bottom:-6px;right:18px;font-size:38px;opacity:.22;letter-spacing:7px}
+  .cta-band::after{content:"🥪🥐🧀🥖☕";position:absolute;bottom:-6px;right:18px;font-size:38px;opacity:.22;letter-spacing:7px}
   .cta-band h2{font-size:clamp(30px,4.5vw,46px);margin-bottom:12px}
   .cta-band p{font-size:17px;margin-bottom:26px;font-weight:500;opacity:.95}
   .cta-band .btn{background:#fff;color:var(--tomato-d)}
@@ -236,13 +237,13 @@ const html = `<!DOCTYPE html>
         <a href="https://www.one2three.app/broodjesvaneden/menu" class="btn btn-ghost">Bestel online</a>
       </div>
       <div class="hero-meta">
-        <div><b>${totaal}+</b><span>gerechten</span></div>
+        <div><b>${broodjesN}+</b><span>soorten broodjes</span></div>
         <div><b>100%</b><span>vers bereid</span></div>
         <div><b>Ma–Vr</b><span>07:30–15:00</span></div>
       </div>
     </div>
     <div class="hero-visual">
-      <span class="femoji e1">🥪</span><span class="femoji e2">🍟</span>
+      <span class="femoji e1">🥪</span><span class="femoji e2">☕</span>
       <div class="logo-sign"><img src="logo-dark.png" alt="Broodjes van Eden"></div>
       <div class="fcard b"><div class="ft">Populair</div><div class="fn">${esc(hero1 ? hero1.naam : "Broodje gezond")}</div><div class="fp">€${esc(hero1 ? hero1.prijs : "3.60")}</div></div>
     </div>
