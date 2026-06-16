@@ -1,0 +1,1898 @@
+{
+  "Broodjes": [
+    {
+      "naam": "Aardappelsla",
+      "prijs": "2.90",
+      "desc": ""
+    },
+    {
+      "naam": "Broodje gezond",
+      "prijs": "3.60",
+      "desc": ""
+    },
+    {
+      "naam": "Gerookte zalm",
+      "prijs": "3.70",
+      "desc": ""
+    },
+    {
+      "naam": "Hesp",
+      "prijs": "2.80",
+      "desc": ""
+    },
+    {
+      "naam": "Kaas",
+      "prijs": "2.80",
+      "desc": ""
+    },
+    {
+      "naam": "Kaas en hesp",
+      "prijs": "3.20",
+      "desc": ""
+    },
+    {
+      "naam": "Kip curry",
+      "prijs": "2.90",
+      "desc": ""
+    },
+    {
+      "naam": "Martino",
+      "prijs": "3.40",
+      "desc": ""
+    },
+    {
+      "naam": "Préparé",
+      "prijs": "3.20",
+      "desc": ""
+    },
+    {
+      "naam": "Américain (specialiteit)",
+      "prijs": "3.20",
+      "desc": ""
+    },
+    {
+      "naam": "Boulet (specialiteit)",
+      "prijs": "2.95",
+      "desc": ""
+    },
+    {
+      "naam": "Brie",
+      "prijs": "3.40",
+      "desc": ""
+    },
+    {
+      "naam": "Broodje mayonaise",
+      "prijs": "1.60",
+      "desc": ""
+    },
+    {
+      "naam": "Club Aardappelsla",
+      "prijs": "3.90",
+      "desc": ""
+    },
+    {
+      "naam": "Club Américain (specialiteit)",
+      "prijs": "4.10",
+      "desc": ""
+    },
+    {
+      "naam": "Club Boulet (specialiteit)",
+      "prijs": "3.85",
+      "desc": ""
+    },
+    {
+      "naam": "Club Brie",
+      "prijs": "4.30",
+      "desc": ""
+    },
+    {
+      "naam": "Club Broodje mayonaise",
+      "prijs": "2.50",
+      "desc": ""
+    },
+    {
+      "naam": "Club Eiersla (specialiteit)",
+      "prijs": "3.60",
+      "desc": ""
+    },
+    {
+      "naam": "Club Gerookte zalm (plakjes)",
+      "prijs": "5.40",
+      "desc": ""
+    },
+    {
+      "naam": "Club Italiaanse ham",
+      "prijs": "4.40",
+      "desc": ""
+    },
+    {
+      "naam": "Club Kaas",
+      "prijs": "3.60",
+      "desc": ""
+    },
+    {
+      "naam": "Club Kaassla (specialiteit)",
+      "prijs": "4.00",
+      "desc": ""
+    },
+    {
+      "naam": "Club Kip curry",
+      "prijs": "4.40",
+      "desc": ""
+    },
+    {
+      "naam": "Club Kip, gegrild à la minute",
+      "prijs": "4.75",
+      "desc": ""
+    },
+    {
+      "naam": "Club Kip natuur (specialiteit)",
+      "prijs": "4.05",
+      "desc": ""
+    },
+    {
+      "naam": "Club Kip (verse kippestukjes)",
+      "prijs": "3.85",
+      "desc": ""
+    },
+    {
+      "naam": "Club Komkommersla",
+      "prijs": "4.00",
+      "desc": ""
+    },
+    {
+      "naam": "Club Krabsla (specialiteit)",
+      "prijs": "4.30",
+      "desc": ""
+    },
+    {
+      "naam": "Club Kruidenkaas",
+      "prijs": "3.85",
+      "desc": ""
+    },
+    {
+      "naam": "Club Langoustinesla",
+      "prijs": "5.40",
+      "desc": ""
+    },
+    {
+      "naam": "Club Martino (specialiteit)",
+      "prijs": "4.20",
+      "desc": ""
+    },
+    {
+      "naam": "Club Mozarella + tomaat",
+      "prijs": "4.40",
+      "desc": ""
+    },
+    {
+      "naam": "Club Pittasla",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Club Rosbeef",
+      "prijs": "4.60",
+      "desc": ""
+    },
+    {
+      "naam": "Club Salami",
+      "prijs": "3.85",
+      "desc": ""
+    },
+    {
+      "naam": "Club Scampi in curry",
+      "prijs": "5.60",
+      "desc": ""
+    },
+    {
+      "naam": "Club Seldersla",
+      "prijs": "3.80",
+      "desc": ""
+    },
+    {
+      "naam": "Club Tonijn pikant",
+      "prijs": "4.40",
+      "desc": ""
+    },
+    {
+      "naam": "Club Tonijnsla",
+      "prijs": "4.00",
+      "desc": ""
+    },
+    {
+      "naam": "Club Vleessla (specialiteit)",
+      "prijs": "4.05",
+      "desc": ""
+    },
+    {
+      "naam": "Club Zalmsla",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Eiersla (specialiteit)",
+      "prijs": "2.70",
+      "desc": ""
+    },
+    {
+      "naam": "Gerookte zalm (plakjes)",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Grijze garnaalsla (specialiteit)",
+      "prijs": "5.00",
+      "desc": ""
+    },
+    {
+      "naam": "Kaas + hesp",
+      "prijs": "3.30",
+      "desc": ""
+    },
+    {
+      "naam": "Kaassla (specialiteit)",
+      "prijs": "3.10",
+      "desc": ""
+    },
+    {
+      "naam": "Kip Andalouse (specialiteit)",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Kip, gegrild à la minute",
+      "prijs": "3.85",
+      "desc": ""
+    },
+    {
+      "naam": "Kip Hawaï",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Kip natuur (specialiteit)",
+      "prijs": "3.15",
+      "desc": ""
+    },
+    {
+      "naam": "Kip pikant",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Komkommersla",
+      "prijs": "3.10",
+      "desc": ""
+    },
+    {
+      "naam": "Krabsla (specialiteit)",
+      "prijs": "3.40",
+      "desc": ""
+    },
+    {
+      "naam": "Kruidenkaas",
+      "prijs": "2.95",
+      "desc": ""
+    },
+    {
+      "naam": "Langoustinesla",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Mozarella + tomaat",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Pittasla",
+      "prijs": "3.60",
+      "desc": ""
+    },
+    {
+      "naam": "Rosbeef",
+      "prijs": "3.70",
+      "desc": ""
+    },
+    {
+      "naam": "Salami",
+      "prijs": "2.95",
+      "desc": ""
+    },
+    {
+      "naam": "Scampi in curry",
+      "prijs": "4.70",
+      "desc": ""
+    },
+    {
+      "naam": "Seldersla",
+      "prijs": "2.90",
+      "desc": ""
+    },
+    {
+      "naam": "Smos (club kaas + hesp)",
+      "prijs": "3.80",
+      "desc": ""
+    },
+    {
+      "naam": "Tonijn pikant",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Vleessla (specialiteit)",
+      "prijs": "3.15",
+      "desc": ""
+    },
+    {
+      "naam": "Italiaanse ham",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Club Grijze garnaalsla (specialiteit)",
+      "prijs": "5.90",
+      "desc": ""
+    },
+    {
+      "naam": "Club Hesp + aardappelsla",
+      "prijs": "4.70",
+      "desc": ""
+    },
+    {
+      "naam": "Club Hesp",
+      "prijs": "3.60",
+      "desc": ""
+    },
+    {
+      "naam": "Club Kip pikant",
+      "prijs": "4.40",
+      "desc": ""
+    },
+    {
+      "naam": "Hesp + aardappelsla",
+      "prijs": "3.80",
+      "desc": ""
+    },
+    {
+      "naam": "Martino (specialiteit)",
+      "prijs": "3.50",
+      "desc": ""
+    }
+  ],
+  "Smos Broodjes": [
+    {
+      "naam": "Broodje Bicky boulet",
+      "prijs": "5.50",
+      "desc": ""
+    },
+    {
+      "naam": "Broodje Curryworst",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Broodje Curryworst Special",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Broodje Kroket",
+      "prijs": "5.50",
+      "desc": "2 stuks"
+    },
+    {
+      "naam": "Broodje Saté",
+      "prijs": "4.00",
+      "desc": ""
+    }
+  ],
+  "Speciale broodjes": [
+    {
+      "naam": "Club Gerookte zalm + kruidenkaas",
+      "prijs": "6.00",
+      "desc": ""
+    },
+    {
+      "naam": "Club gezond",
+      "prijs": "3.15",
+      "desc": ""
+    },
+    {
+      "naam": "Club Kip + Komkommersla",
+      "prijs": "5.20",
+      "desc": ""
+    },
+    {
+      "naam": "Gerookte zalm + eiersla (specialiteit)",
+      "prijs": "5.10",
+      "desc": ""
+    },
+    {
+      "naam": "Rosbeef + Seldersla",
+      "prijs": "4.65",
+      "desc": ""
+    },
+    {
+      "naam": "Slank",
+      "prijs": "3.55",
+      "desc": ""
+    },
+    {
+      "naam": "Club Gerookte zalm + eiersla (specialiteit)",
+      "prijs": "6.00",
+      "desc": ""
+    },
+    {
+      "naam": "Brie Special",
+      "prijs": "4.10",
+      "desc": ""
+    }
+  ],
+  "Croques": [
+    {
+      "naam": "Croque Hawaï met groenten",
+      "prijs": "5.60",
+      "desc": ""
+    },
+    {
+      "naam": "Croque Monsieur in het vuistje",
+      "prijs": "4.00",
+      "desc": ""
+    },
+    {
+      "naam": "Croque Monsieur met groenten",
+      "prijs": "5.40",
+      "desc": ""
+    }
+  ],
+  "Koude schotels": [
+    {
+      "naam": "Hesp",
+      "prijs": "7.00",
+      "desc": ""
+    },
+    {
+      "naam": "Natuur",
+      "prijs": "6.00",
+      "desc": ""
+    },
+    {
+      "naam": "Américainschotel",
+      "prijs": "8.60",
+      "desc": ""
+    },
+    {
+      "naam": "Gerookte zalmschotel",
+      "prijs": "9.40",
+      "desc": ""
+    },
+    {
+      "naam": "Grijzegarnaalschotel",
+      "prijs": "13.00",
+      "desc": ""
+    },
+    {
+      "naam": "Groentenschotel",
+      "prijs": "5.30",
+      "desc": ""
+    },
+    {
+      "naam": "Hespenschotel",
+      "prijs": "7.80",
+      "desc": ""
+    },
+    {
+      "naam": "Kipschotel",
+      "prijs": "8.60",
+      "desc": ""
+    },
+    {
+      "naam": "Langoustineschotel",
+      "prijs": "9.50",
+      "desc": ""
+    },
+    {
+      "naam": "Mozarella + tomaatschotel",
+      "prijs": "7.80",
+      "desc": ""
+    },
+    {
+      "naam": "Rosbeefschotel",
+      "prijs": "9.80",
+      "desc": ""
+    },
+    {
+      "naam": "Tonijnschotel",
+      "prijs": "7.90",
+      "desc": ""
+    }
+  ],
+  "Salades": [
+    {
+      "naam": "Americain Preparé",
+      "prijs": "14.90",
+      "desc": "Groentjes inbegrepen"
+    }
+  ],
+  "Warme gerechten": [
+    {
+      "naam": "Rigatone met bolognaisesaus",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Rigatone met carbonarasaus",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Spaghetti",
+      "prijs": "5.50",
+      "desc": ""
+    },
+    {
+      "naam": "Stoofvlees met varkenswangetjes en kasteelbier",
+      "prijs": "9.90",
+      "desc": ""
+    },
+    {
+      "naam": "Balletjes in tomatensaus",
+      "prijs": "9.90",
+      "desc": ""
+    },
+    {
+      "naam": "Vol-au-Vent",
+      "prijs": "9.90",
+      "desc": ""
+    },
+    {
+      "naam": "Gyros",
+      "prijs": "9.90",
+      "desc": ""
+    }
+  ],
+  "Klassieke Snacks": [
+    {
+      "naam": "Frikandel",
+      "prijs": "2.20",
+      "desc": ""
+    },
+    {
+      "naam": "Frikandel special",
+      "prijs": "3.20",
+      "desc": ""
+    },
+    {
+      "naam": "Viandel",
+      "prijs": "2.80",
+      "desc": ""
+    },
+    {
+      "naam": "Viandel Special",
+      "prijs": "3.80",
+      "desc": ""
+    },
+    {
+      "naam": "Boulet",
+      "prijs": "2.90",
+      "desc": ""
+    },
+    {
+      "naam": "Boulet Special",
+      "prijs": "3.90",
+      "desc": ""
+    },
+    {
+      "naam": "Mexicano",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Kipnuggets (5 stuks)",
+      "prijs": "4.20",
+      "desc": ""
+    },
+    {
+      "naam": "Kipfingers (6 stuks)",
+      "prijs": "4.60",
+      "desc": ""
+    },
+    {
+      "naam": "Mini-Loempia’s (6 stuks)",
+      "prijs": "4.60",
+      "desc": "Loempiasaus inbegrepen"
+    },
+    {
+      "naam": "Kipcorn",
+      "prijs": "3.40",
+      "desc": ""
+    },
+    {
+      "naam": "Grizzly",
+      "prijs": "5.00",
+      "desc": ""
+    },
+    {
+      "naam": "Visbrochet",
+      "prijs": "4.40",
+      "desc": ""
+    },
+    {
+      "naam": "Sito (Kalkoenstick)",
+      "prijs": "4.80",
+      "desc": ""
+    },
+    {
+      "naam": "Bitterballen (5 stuks)",
+      "prijs": "3.40",
+      "desc": ""
+    },
+    {
+      "naam": "Zigeunerstick",
+      "prijs": "4.20",
+      "desc": ""
+    },
+    {
+      "naam": "Lookworst",
+      "prijs": "4.20",
+      "desc": ""
+    },
+    {
+      "naam": "Jagersworst",
+      "prijs": "4.20",
+      "desc": ""
+    },
+    {
+      "naam": "Lookworst special",
+      "prijs": "5.20",
+      "desc": ""
+    },
+    {
+      "naam": "Jagerworst Special",
+      "prijs": "5.20",
+      "desc": ""
+    },
+    {
+      "naam": "Taco",
+      "prijs": "4.90",
+      "desc": ""
+    }
+  ],
+  "Speciale Snacks": [
+    {
+      "naam": "Ragouzi",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Mammoet",
+      "prijs": "2.80",
+      "desc": ""
+    },
+    {
+      "naam": "Viandel spicy",
+      "prijs": "3.00",
+      "desc": ""
+    },
+    {
+      "naam": "Lucifer",
+      "prijs": "3.90",
+      "desc": ""
+    },
+    {
+      "naam": "Mini-Lucifer",
+      "prijs": "4.30",
+      "desc": ""
+    },
+    {
+      "naam": "Vuurvreter",
+      "prijs": "3.40",
+      "desc": ""
+    },
+    {
+      "naam": "Kaassouflé",
+      "prijs": "3.40",
+      "desc": ""
+    },
+    {
+      "naam": "Bockworst",
+      "prijs": "3.90",
+      "desc": ""
+    },
+    {
+      "naam": "Bockworst Special",
+      "prijs": "4.90",
+      "desc": ""
+    },
+    {
+      "naam": "Krokidel XXL",
+      "prijs": "3.90",
+      "desc": ""
+    },
+    {
+      "naam": "Krokidel XXL Special",
+      "prijs": "4.90",
+      "desc": ""
+    },
+    {
+      "naam": "Frikandel XXL",
+      "prijs": "4.80",
+      "desc": ""
+    },
+    {
+      "naam": "Frikandel XXL Special",
+      "prijs": "6.00",
+      "desc": ""
+    },
+    {
+      "naam": "Gaaky Boulet",
+      "prijs": "4.00",
+      "desc": ""
+    },
+    {
+      "naam": "Gaaky Boulet Special",
+      "prijs": "5.00",
+      "desc": ""
+    },
+    {
+      "naam": "Chick and Chili",
+      "prijs": "4.70",
+      "desc": ""
+    },
+    {
+      "naam": "Bamiballetjes",
+      "prijs": "3.60",
+      "desc": ""
+    },
+    {
+      "naam": "Ambiorix",
+      "prijs": "3.80",
+      "desc": ""
+    },
+    {
+      "naam": "Kiploempia",
+      "prijs": "4.80",
+      "desc": ""
+    },
+    {
+      "naam": "Mini-Megamix",
+      "prijs": "5.90",
+      "desc": ""
+    }
+  ],
+  "Snacks": [
+    {
+      "naam": "Aardappelkroket",
+      "prijs": "0.20",
+      "desc": ""
+    },
+    {
+      "naam": "Bamischijf",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Bamiblok pikant (VEGI)",
+      "prijs": "2.30",
+      "desc": ""
+    },
+    {
+      "naam": "Berehap/grizly",
+      "prijs": "4.00",
+      "desc": ""
+    },
+    {
+      "naam": "Bereklauw / berepoot",
+      "prijs": "3.00",
+      "desc": ""
+    },
+    {
+      "naam": "Bitterballen",
+      "prijs": "2.30",
+      "desc": ""
+    },
+    {
+      "naam": "Boulet gebakken",
+      "prijs": "2.50",
+      "desc": ""
+    },
+    {
+      "naam": "Boulet Special",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Cervela gebakken",
+      "prijs": "2.60",
+      "desc": ""
+    },
+    {
+      "naam": "Cervela look gebakken(playboy)",
+      "prijs": "3.50",
+      "desc": "Playboy"
+    },
+    {
+      "naam": "Cervela look special",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Cervela special",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Chick- in Chili",
+      "prijs": "3.00",
+      "desc": ""
+    },
+    {
+      "naam": "Chix fingers",
+      "prijs": "4.00",
+      "desc": ""
+    },
+    {
+      "naam": "Curryworst",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Curryworst special",
+      "prijs": "3.00",
+      "desc": ""
+    },
+    {
+      "naam": "Curryworst XXL",
+      "prijs": "3.70",
+      "desc": ""
+    },
+    {
+      "naam": "Garnaalkroket",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Goulashkroket",
+      "prijs": "3.00",
+      "desc": ""
+    },
+    {
+      "naam": "Groente-kaasschijf (VEGI)",
+      "prijs": "4.20",
+      "desc": ""
+    },
+    {
+      "naam": "Kaaskroket (VEGI)",
+      "prijs": "2.50",
+      "desc": ""
+    },
+    {
+      "naam": "Kaassoufflé (VEGI)",
+      "prijs": "2.50",
+      "desc": ""
+    },
+    {
+      "naam": "Kippets",
+      "prijs": "4.00",
+      "desc": ""
+    },
+    {
+      "naam": "Kipsaté",
+      "prijs": "4.00",
+      "desc": ""
+    },
+    {
+      "naam": "Loempia",
+      "prijs": "4.00",
+      "desc": ""
+    },
+    {
+      "naam": "Lucifer",
+      "prijs": "3.00",
+      "desc": ""
+    },
+    {
+      "naam": "Mini Megamix",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Mini loempia (VEGI) + portie zoetzure saus",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Mosselen",
+      "prijs": "2.50",
+      "desc": ""
+    },
+    {
+      "naam": "Ragouzi",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Ribster",
+      "prijs": "3.20",
+      "desc": ""
+    },
+    {
+      "naam": "Saté",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Saté shaslick",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Sitostick",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Smulbox",
+      "prijs": "5.80",
+      "desc": ""
+    },
+    {
+      "naam": "Spablo",
+      "prijs": "3.00",
+      "desc": ""
+    },
+    {
+      "naam": "Taco",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Viandel",
+      "prijs": "2.50",
+      "desc": ""
+    },
+    {
+      "naam": "Viandel special",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Visstick",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Vleeskroket",
+      "prijs": "3.00",
+      "desc": ""
+    },
+    {
+      "naam": "Vuurvreter",
+      "prijs": "3.00",
+      "desc": ""
+    },
+    {
+      "naam": "Pizza-baguette",
+      "prijs": "3.80",
+      "desc": ""
+    },
+    {
+      "naam": "Worstenbroodje",
+      "prijs": "1.60",
+      "desc": ""
+    },
+    {
+      "naam": "Kaasflap",
+      "prijs": "1.55",
+      "desc": ""
+    },
+    {
+      "naam": "Fish Burger",
+      "prijs": "4.00",
+      "desc": "Met tartaarsaus, sla, tomaat en verse ui"
+    }
+  ],
+  "Bicky burgers": [
+    {
+      "naam": "Hamburgerschijf",
+      "prijs": "2.20",
+      "desc": ""
+    },
+    {
+      "naam": "Bicky Burger",
+      "prijs": "4.90",
+      "desc": ""
+    },
+    {
+      "naam": "Bicky Cheese burger",
+      "prijs": "5.00",
+      "desc": ""
+    },
+    {
+      "naam": "Bicky Crunchy Chicken",
+      "prijs": "4.90",
+      "desc": ""
+    },
+    {
+      "naam": "Bicky Rib Burger",
+      "prijs": "5.30",
+      "desc": ""
+    },
+    {
+      "naam": "Rallyburger",
+      "prijs": "6.90",
+      "desc": ""
+    },
+    {
+      "naam": "Bicky Royal",
+      "prijs": "7.80",
+      "desc": ""
+    },
+    {
+      "naam": "Bicky Fish",
+      "prijs": "5.00",
+      "desc": "Tartaar saus"
+    },
+    {
+      "naam": "Bicky Chickless (VEGGIE)",
+      "prijs": "4.90",
+      "desc": ""
+    },
+    {
+      "naam": "Chicken Pepper",
+      "prijs": "5.50",
+      "desc": "hamburgersaus, pepersaus, chicken schijf, salade, tomaat en witte ajuin"
+    },
+    {
+      "naam": "Bacon Burger",
+      "prijs": "5.50",
+      "desc": "toscaanse saus, hamburger + 2 sneetjes bacon, salade, tomaat, witte ajuin."
+    },
+    {
+      "naam": "Bicky Crispy",
+      "prijs": "4.90",
+      "desc": ""
+    },
+    {
+      "naam": "Cheesepepper",
+      "prijs": "5.50",
+      "desc": ""
+    },
+    {
+      "naam": "Beefburger",
+      "prijs": "5.30",
+      "desc": ""
+    },
+    {
+      "naam": "Bicky Wrap",
+      "prijs": "5.30",
+      "desc": ""
+    },
+    {
+      "naam": "Bicky Cheeseburger",
+      "prijs": "4.10",
+      "desc": ""
+    },
+    {
+      "naam": "Bicky Chickenburger Crispy",
+      "prijs": "4.00",
+      "desc": ""
+    },
+    {
+      "naam": "Bicky Royal cheese",
+      "prijs": "6.20",
+      "desc": ""
+    },
+    {
+      "naam": "Bicky Vegiburger (VEGI)",
+      "prijs": "4.50",
+      "desc": ""
+    }
+  ],
+  "Verse Brochetten": [
+    {
+      "naam": "Kippenboutjes",
+      "prijs": "5.50",
+      "desc": ""
+    },
+    {
+      "naam": "Ardeense Brochet",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Mergueze",
+      "prijs": "4.20",
+      "desc": ""
+    },
+    {
+      "naam": "Merguezebrochet",
+      "prijs": "4.20",
+      "desc": ""
+    },
+    {
+      "naam": "Kleine Brochet",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Middel Brochet",
+      "prijs": "6.90",
+      "desc": ""
+    },
+    {
+      "naam": "Mixbrochet",
+      "prijs": "7.90",
+      "desc": ""
+    }
+  ],
+  "Kroketten": [
+    {
+      "naam": "Vleeskroket",
+      "prijs": "3.70",
+      "desc": ""
+    },
+    {
+      "naam": "Kaaskroket",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Garnaalkroket",
+      "prijs": "6.20",
+      "desc": ""
+    },
+    {
+      "naam": "Mozzarellasticks",
+      "prijs": "3.90",
+      "desc": ""
+    }
+  ],
+  "Frieten": [
+    {
+      "naam": "Kinderbakje",
+      "prijs": "2.70",
+      "desc": ""
+    },
+    {
+      "naam": "Kleintje",
+      "prijs": "3.20",
+      "desc": ""
+    },
+    {
+      "naam": "Middel",
+      "prijs": "3.70",
+      "desc": ""
+    },
+    {
+      "naam": "Groot",
+      "prijs": "4.50",
+      "desc": ""
+    },
+    {
+      "naam": "Familiepak",
+      "prijs": "9.00",
+      "desc": ""
+    },
+    {
+      "naam": "Smullbox",
+      "prijs": "9.00",
+      "desc": ""
+    },
+    {
+      "naam": "Klein",
+      "prijs": "2.30",
+      "desc": ""
+    },
+    {
+      "naam": "Mini",
+      "prijs": "2.10",
+      "desc": ""
+    }
+  ],
+  "Speciale Frieten": [
+    {
+      "naam": "Patatje OORLOG viandelle",
+      "prijs": "10.50",
+      "desc": "Frietjes, satékruiden, stoofvleessaus, mayonaise, curry ketchup, gedroogde ajuin"
+    },
+    {
+      "naam": "Patatje OORLOG mexicano",
+      "prijs": "11.00",
+      "desc": "Frietjes, satékruiden, stoofvleessaus, mayonaise, curry ketchup, gedroogde ajuin"
+    },
+    {
+      "naam": "Patatje OORLOG frikandel",
+      "prijs": "10.50",
+      "desc": "Frietjes, satékruiden, stoofvleessaus, mayonaise, curry ketchup, gedroogde ajuin"
+    }
+  ],
+  "Sauzen": [
+    {
+      "naam": "Mayonaise",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Ketchup",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Curryketchup",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Andalouse",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Samourai (pikant)",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Cocktail",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Américaine",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Tartaar",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Toscaanse",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Gele Curry",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Provencaalse",
+      "prijs": "1.70",
+      "desc": ""
+    },
+    {
+      "naam": "Gele Bicky saus",
+      "prijs": "1.70",
+      "desc": ""
+    },
+    {
+      "naam": "Roze Pepersaus",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Loempiasaus",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Pickles",
+      "prijs": "1.70",
+      "desc": ""
+    },
+    {
+      "naam": "Hannibalsaus",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "witte pepersaus",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "hamburgersaus",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Brasilsaus",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Speciale saus",
+      "prijs": "2.50",
+      "desc": "Mayonaise, curry ketchup en verse ui"
+    },
+    {
+      "naam": "Mosterd",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Joppiesaus",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Mammoetsaus",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "looksaus",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Mysterie saus",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Curry Ketchup",
+      "prijs": "1.50",
+      "desc": ""
+    },
+    {
+      "naam": "Pepersaus warm",
+      "prijs": "3.40",
+      "desc": ""
+    },
+    {
+      "naam": "Boter",
+      "prijs": "0.30",
+      "desc": ""
+    },
+    {
+      "naam": "Cocktailsaus",
+      "prijs": "0.30",
+      "desc": ""
+    },
+    {
+      "naam": "Martinosaus",
+      "prijs": "0.30",
+      "desc": ""
+    },
+    {
+      "naam": "Pesto",
+      "prijs": "0.30",
+      "desc": ""
+    },
+    {
+      "naam": "Provencettesaus",
+      "prijs": "0.30",
+      "desc": ""
+    },
+    {
+      "naam": "Samoerai",
+      "prijs": "0.30",
+      "desc": ""
+    },
+    {
+      "naam": "Portie americain",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie andalouse",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie barbequesaus",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie cocktailsaus",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie mammoet (Hannibal)",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie hollandse mayonaise (zoete)",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie joppiesaus",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie ketchup curry",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie ketchup tomaat",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie koude curry",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie tomataise",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie mayonaise",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie pickles",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie samurai",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie tartaar eigenmaak",
+      "prijs": "0.80",
+      "desc": ""
+    },
+    {
+      "naam": "Portie zoetzure saus",
+      "prijs": "0.80",
+      "desc": ""
+    }
+  ],
+  "Warme sauzen": [
+    {
+      "naam": "Stoofvleessaus",
+      "prijs": "2.90",
+      "desc": ""
+    },
+    {
+      "naam": "Champignonsaus",
+      "prijs": "3.90",
+      "desc": ""
+    },
+    {
+      "naam": "Tomatensaus",
+      "prijs": "3.90",
+      "desc": ""
+    },
+    {
+      "naam": "Warme Pepersaus",
+      "prijs": "3.50",
+      "desc": ""
+    },
+    {
+      "naam": "Pot Goulash 100cc",
+      "prijs": "2.50",
+      "desc": "100CC"
+    },
+    {
+      "naam": "Pot Pindasaus / satésaus",
+      "prijs": "1.30",
+      "desc": ""
+    },
+    {
+      "naam": "Pot Stoofvlees 200cc",
+      "prijs": "5.00",
+      "desc": ""
+    },
+    {
+      "naam": "Pot Stoofvleessaus 200cc",
+      "prijs": "2.60",
+      "desc": ""
+    },
+    {
+      "naam": "Pot Warme curry",
+      "prijs": "1.30",
+      "desc": ""
+    }
+  ],
+  "Frisdranken": [
+    {
+      "naam": "AA-Drink - 33cl",
+      "prijs": "1.60",
+      "desc": ""
+    },
+    {
+      "naam": "Aquarius Blue Ice - 50cl",
+      "prijs": "2.70",
+      "desc": ""
+    },
+    {
+      "naam": "Aquarius grape - 50cl",
+      "prijs": "2.70",
+      "desc": ""
+    },
+    {
+      "naam": "Aquarius lemon - 50cl",
+      "prijs": "2.70",
+      "desc": ""
+    },
+    {
+      "naam": "Aquarius orange - 50cl",
+      "prijs": "2.70",
+      "desc": ""
+    },
+    {
+      "naam": "Canada dry - 33cl",
+      "prijs": "1.60",
+      "desc": ""
+    },
+    {
+      "naam": "Chaudfontaine – plat water (33cl)",
+      "prijs": "1.30",
+      "desc": ""
+    },
+    {
+      "naam": "Chaudfontaine – spuitwater (33cl)",
+      "prijs": "1.30",
+      "desc": ""
+    },
+    {
+      "naam": "Coca-cola - 33cl",
+      "prijs": "1.30",
+      "desc": ""
+    },
+    {
+      "naam": "Coca-cola - 50cl",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Coca-cola light - 50cl",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Coca-cola light lemon - 33cl",
+      "prijs": "1.30",
+      "desc": ""
+    },
+    {
+      "naam": "Coca-cola light lemon - 50cl",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Coca-cola zero - 33cl",
+      "prijs": "1.30",
+      "desc": ""
+    },
+    {
+      "naam": "Coca-cola zero - 50cl",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Fanta lemon - 33cl",
+      "prijs": "1.30",
+      "desc": ""
+    },
+    {
+      "naam": "Fanta lemon - 50cl",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Fanta orange - 33cl",
+      "prijs": "1.30",
+      "desc": ""
+    },
+    {
+      "naam": "Fanta orange - 50cl",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Gini - 33cl",
+      "prijs": "1.60",
+      "desc": ""
+    },
+    {
+      "naam": "Lipton Ice Tea - 33cl",
+      "prijs": "1.60",
+      "desc": ""
+    },
+    {
+      "naam": "Lipton Ice Tea - 50cl",
+      "prijs": "2.10",
+      "desc": ""
+    },
+    {
+      "naam": "Lipton Ice Tea zero - 33cl",
+      "prijs": "1.60",
+      "desc": ""
+    },
+    {
+      "naam": "Minute Maid appel - 33cl",
+      "prijs": "1.90",
+      "desc": ""
+    },
+    {
+      "naam": "Minute Maid Multi - 33cl",
+      "prijs": "1.90",
+      "desc": ""
+    },
+    {
+      "naam": "Minute Maid Orange - 33cl",
+      "prijs": "1.90",
+      "desc": ""
+    },
+    {
+      "naam": "Nestea Green - 33cl",
+      "prijs": "1.60",
+      "desc": ""
+    },
+    {
+      "naam": "Nestea Ice Tea - 33cl",
+      "prijs": "1.60",
+      "desc": ""
+    },
+    {
+      "naam": "Nestea Peach - 33cl",
+      "prijs": "1.60",
+      "desc": ""
+    },
+    {
+      "naam": "Nestea Peach - 50cl",
+      "prijs": "2.10",
+      "desc": ""
+    },
+    {
+      "naam": "Schweppes Agrum - 33cl",
+      "prijs": "1.60",
+      "desc": ""
+    },
+    {
+      "naam": "Schweppes Agrum light - 33cl",
+      "prijs": "1.60",
+      "desc": ""
+    },
+    {
+      "naam": "Sprite - 33cl",
+      "prijs": "1.30",
+      "desc": ""
+    },
+    {
+      "naam": "Sprite - 50cl",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Sprite zero - 33cl",
+      "prijs": "1.30",
+      "desc": ""
+    },
+    {
+      "naam": "Sprite zero - 50cl",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Coca-cola light - 33cl",
+      "prijs": "1.30",
+      "desc": ""
+    },
+    {
+      "naam": "Aquarius Red Blast - 50cl",
+      "prijs": "2.70",
+      "desc": ""
+    },
+    {
+      "naam": "Cola 33cl",
+      "prijs": "1.80",
+      "desc": ""
+    },
+    {
+      "naam": "Cola 50cl",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Cola zero 33cl",
+      "prijs": "1.80",
+      "desc": ""
+    },
+    {
+      "naam": "Cola zero 50cl",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Fanta 33cl",
+      "prijs": "1.80",
+      "desc": ""
+    },
+    {
+      "naam": "Ice Tea 33cl",
+      "prijs": "1.80",
+      "desc": ""
+    },
+    {
+      "naam": "Jupiler 33cl",
+      "prijs": "1.90",
+      "desc": ""
+    },
+    {
+      "naam": "Red Bull 25cl",
+      "prijs": "2.50",
+      "desc": ""
+    },
+    {
+      "naam": "Spa blauw 50cl",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Spa rood 50cl",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Sprite 33cl",
+      "prijs": "1.80",
+      "desc": ""
+    }
+  ],
+  "Melkdrankjes": [
+    {
+      "naam": "Cécémel chocolademelk – 25cl",
+      "prijs": "1.80",
+      "desc": ""
+    },
+    {
+      "naam": "Fristi – 25cl",
+      "prijs": "1.85",
+      "desc": ""
+    },
+    {
+      "naam": "Inza chocolademelk – 50cl",
+      "prijs": "1.65",
+      "desc": ""
+    },
+    {
+      "naam": "Inza melk – 50cl",
+      "prijs": "1.65",
+      "desc": ""
+    }
+  ],
+  "Bieren": [
+    {
+      "naam": "Jupiler (fles)",
+      "prijs": "2.00",
+      "desc": "*enkel om ter plaatse op te drinken*"
+    },
+    {
+      "naam": "Stella (fles)",
+      "prijs": "2.00",
+      "desc": "*enkel om ter plaatse op te drinken*"
+    },
+    {
+      "naam": "Leffe Blond (fles)",
+      "prijs": "4.00",
+      "desc": "*enkel om ter plaatse op te drinken*"
+    },
+    {
+      "naam": "Omer (fles)",
+      "prijs": "4.00",
+      "desc": "*enkel om ter plaatse op te drinken*"
+    },
+    {
+      "naam": "Jupiler (blik)",
+      "prijs": "2.50",
+      "desc": ""
+    },
+    {
+      "naam": "Burn – 25cl",
+      "prijs": "2.45",
+      "desc": ""
+    },
+    {
+      "naam": "Jupiler – 33cl",
+      "prijs": "2.10",
+      "desc": ""
+    },
+    {
+      "naam": "Monster Energy – 50cl",
+      "prijs": "2.75",
+      "desc": ""
+    },
+    {
+      "naam": "Monster Ripper – 50cl",
+      "prijs": "2.75",
+      "desc": ""
+    },
+    {
+      "naam": "Nalu – 25cl",
+      "prijs": "2.40",
+      "desc": ""
+    },
+    {
+      "naam": "Red Bull – 25cl",
+      "prijs": "2.65",
+      "desc": ""
+    }
+  ],
+  "Koffiekoeken": [
+    {
+      "naam": "Chocoladebroodje",
+      "prijs": "1.20",
+      "desc": ""
+    },
+    {
+      "naam": "Croissant",
+      "prijs": "1.00",
+      "desc": ""
+    },
+    {
+      "naam": "Croissant met choco",
+      "prijs": "1.60",
+      "desc": ""
+    },
+    {
+      "naam": "Ronde Suisse",
+      "prijs": "1.30",
+      "desc": ""
+    },
+    {
+      "naam": "Appelflap",
+      "prijs": "1.45",
+      "desc": ""
+    }
+  ],
+  "Taartjes": [
+    {
+      "naam": "Frangipannetaartje",
+      "prijs": "2.20",
+      "desc": ""
+    },
+    {
+      "naam": "Rijsttaartje",
+      "prijs": "2.00",
+      "desc": ""
+    },
+    {
+      "naam": "Mattetaartje",
+      "prijs": "2.20",
+      "desc": ""
+    },
+    {
+      "naam": "Normandisch appeltaartje",
+      "prijs": "2.20",
+      "desc": ""
+    }
+  ],
+  "Brownies / Muffins": [
+    {
+      "naam": "Brownie",
+      "prijs": "1.85",
+      "desc": ""
+    },
+    {
+      "naam": "Muffin – Chocolade",
+      "prijs": "2.15",
+      "desc": ""
+    },
+    {
+      "naam": "Vanillecake",
+      "prijs": "1.00",
+      "desc": ""
+    }
+  ]
+}

@@ -1,0 +1,2217 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Broodjes van Eden — Vers & ambachtelijk in Wilrijk</title>
+<meta name="description" content="Broodjes van Eden in Wilrijk: dagverse broodjes, smos, club, croques, frieten, snacks en meer. Vers bereid. Bestel online of kom langs aan het Edenplein.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF0DC; --card:#FFFBF1; --ink:#221A11; --ink-2:#6c5d48; --ink-3:#9b8b72;
+    --green:#1E7A47; --green-d:#155C35; --green-soft:#DDEFE0;
+    --tomato:#E0492C; --tomato-d:#c23a20; --mustard:#F3B43C;
+    --line:rgba(34,26,17,.12); --line-2:rgba(34,26,17,.22);
+    --ease:cubic-bezier(.22,.61,.36,1); --spring:cubic-bezier(.34,1.56,.64,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:140px}
+  body{font-family:"DM Sans",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+    background-image:radial-gradient(rgba(34,26,17,.04) 1px,transparent 1px);background-size:22px 22px}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3,.dz{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;letter-spacing:-.02em;line-height:1}
+  ::selection{background:var(--mustard)}
+  ::-webkit-scrollbar{height:8px;width:8px}::-webkit-scrollbar-thumb{background:var(--ink-3);border-radius:8px}
+
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:3px solid var(--ink)}
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:13px 26px;max-width:1180px;margin:0 auto}
+  .logo{display:flex;align-items:center;gap:11px}
+  .logo .mark{width:42px;height:42px;border-radius:13px;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;transform:rotate(-6deg);box-shadow:3px 3px 0 var(--ink)}
+  .logo .nm{font-family:"Bricolage Grotesque";font-weight:800;font-size:19px;line-height:.95}
+  .logo .nm small{display:block;font-family:"DM Sans";font-weight:600;font-size:10px;letter-spacing:2px;color:var(--green);text-transform:uppercase}
+  .htop{display:flex;align-items:center;gap:24px;font-weight:600;font-size:14.5px}
+  .htop a:not(.order):hover{color:var(--green)}
+  .order{background:var(--tomato);color:#fff;padding:11px 20px;border-radius:30px;font-weight:700;font-size:14px;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);transition:.15s var(--ease)}
+  .order:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink);background:var(--tomato-d)}
+  @media(max-width:820px){.htop a:not(.order){display:none}}
+
+  /* ===== ASYMMETRISCHE HERO ===== */
+  .hero{max-width:1180px;margin:0 auto;padding:60px 26px 30px}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:34px}}
+  .kick{display:inline-flex;align-items:center;gap:9px;background:var(--card);border:2px solid var(--ink);padding:7px 15px;border-radius:30px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;box-shadow:3px 3px 0 var(--ink);animation:pop .6s var(--spring) both}
+  .kick .d{width:8px;height:8px;border-radius:50%;background:var(--tomato);animation:blink 1.5s infinite}
+  @keyframes blink{50%{opacity:.3}} @keyframes pop{from{opacity:0;transform:scale(.85)}to{opacity:1}}
+  .hero h1{font-size:clamp(46px,7vw,84px);margin:22px 0 0;text-align:left}
+  .hero h1 .row{display:block;overflow:hidden}
+  .hero h1 .row span{display:inline-block;animation:up .7s var(--ease) both}
+  .hero h1 .green{color:var(--green)} .hero h1 .tom{color:var(--tomato)}
+  @keyframes up{from{transform:translateY(105%)}to{transform:translateY(0)}}
+  .hero p{font-size:clamp(16px,1.8vw,19px);color:var(--ink-2);max-width:440px;margin:24px 0 30px;font-weight:500;animation:fade .8s .5s both}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  .hero-cta{display:flex;gap:13px;flex-wrap:wrap;animation:fade .8s .6s both}
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:32px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit;border:2px solid var(--ink);transition:.15s var(--ease)}
+  .btn-primary{background:var(--green);color:#fff;box-shadow:4px 4px 0 var(--ink)}
+  .btn-primary:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+  .btn-primary:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+  .btn-ghost{background:var(--card);box-shadow:4px 4px 0 var(--ink)}
+  .btn-ghost:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+  .hero-meta{display:flex;gap:22px;margin-top:34px;flex-wrap:wrap;animation:fade .8s .7s both}
+  .hero-meta div b{font-family:"Bricolage Grotesque";font-size:21px;color:var(--ink);display:block}
+  .hero-meta div span{font-size:12.5px;font-weight:600;color:var(--ink-2)}
+
+  /* hero visual rechts */
+  .hero-visual{position:relative;height:420px}
+  @media(max-width:900px){.hero-visual{height:340px}}
+  .fcard{position:absolute;background:var(--card);border:3px solid var(--ink);border-radius:20px;padding:18px 20px;box-shadow:6px 6px 0 var(--ink);animation:floaty 7s ease-in-out infinite}
+  .fcard .ft{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--tomato)}
+  .fcard .fn{font-family:"Bricolage Grotesque";font-weight:800;font-size:19px;margin:3px 0}
+  .fcard .fp{font-family:"Bricolage Grotesque";font-weight:800;font-size:22px;color:var(--green)}
+  .fcard.a{top:8%;left:2%;transform:rotate(-5deg);width:215px;z-index:3}
+  .fcard.b{bottom:6%;right:0;transform:rotate(5deg);width:215px;z-index:3;animation-delay:1.5s}
+  .femoji{position:absolute;font-size:62px;filter:drop-shadow(4px 6px 8px rgba(34,26,17,.2));animation:floaty 6s ease-in-out infinite}
+  .femoji.e1{top:0;right:24%;animation-delay:.4s} .femoji.e2{bottom:14%;left:14%;font-size:50px;animation-delay:1.1s}
+  @keyframes floaty{0%,100%{translate:0 0}50%{translate:0 -14px}}
+  .seal{position:absolute;top:38%;left:50%;width:128px;height:128px;margin:-64px 0 0 -64px;z-index:4}
+  .seal .ring{width:100%;height:100%;animation:spin 16s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .seal .mid{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:34px}
+  @media(max-width:520px){.seal{display:none}}
+
+  /* ticker */
+  .ticker{background:var(--ink);color:var(--paper);overflow:hidden;white-space:nowrap;padding:11px 0;margin-top:30px;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+  .ticker-track{display:inline-block;animation:scroll 26s linear infinite}
+  .ticker:hover .ticker-track{animation-play-state:paused}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  .tk{font-family:"Bricolage Grotesque";font-weight:700;font-size:15px;text-transform:uppercase;padding:0 6px}
+  .tk-dot{padding:0 16px;color:var(--mustard)}
+
+  /* ===== TWO-PANE MENU ===== */
+  .menu{max-width:1180px;margin:0 auto;padding:64px 26px 40px}
+  .lead{display:flex;align-items:flex-start;gap:18px;margin-bottom:34px}
+  .lead .bignum{font-family:"Bricolage Grotesque";font-weight:800;font-size:clamp(40px,6vw,72px);color:var(--mustard);line-height:.8;-webkit-text-stroke:2px var(--ink)}
+  .lead .kick2{display:inline-block;background:var(--tomato);color:#fff;font-weight:700;font-size:12px;letter-spacing:1px;text-transform:uppercase;padding:5px 13px;border-radius:20px;border:2px solid var(--ink)}
+  .lead h2{font-size:clamp(32px,5vw,54px);margin-top:10px}
+  .layout{display:grid;grid-template-columns:248px 1fr;gap:40px;align-items:start}
+  @media(max-width:820px){.layout{grid-template-columns:1fr;gap:18px}}
+  .cnav{position:sticky;top:96px;display:flex;flex-direction:column;gap:3px;max-height:calc(100vh - 120px);overflow-y:auto;padding-right:4px}
+  .cnav::-webkit-scrollbar{width:5px}
+  .cnav-item{display:flex;align-items:center;gap:11px;padding:9px 13px;border-radius:12px;font-weight:600;font-size:14px;color:var(--ink-2);border:2px solid transparent;transition:.14s var(--ease)}
+  .cnav-item .ci{font-size:16px;width:20px;text-align:center}
+  .cnav-item .cn{flex:1}
+  .cnav-item .cc{font-size:11px;font-weight:700;color:var(--ink-3)}
+  .cnav-item:hover{background:var(--card);color:var(--ink)}
+  .cnav-item.active{background:var(--green);color:#fff;border-color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+  .cnav-item.active .cc{color:#bfe6cb}
+  @media(max-width:820px){
+    .cnav{position:sticky;top:75px;z-index:20;flex-direction:row;overflow-x:auto;background:var(--paper);padding:10px 0;border-bottom:2px solid var(--ink);max-height:none}
+    .cnav-item{white-space:nowrap;border:2px solid var(--ink);background:var(--card)}
+    .cnav-item .cn{flex:none}.cnav-item .cc{display:none}
+  }
+  .menu-main{min-width:0}
+  .cat{display:none;scroll-margin-top:150px}
+  .cat.show{display:block;animation:catin .4s var(--ease)}
+  @keyframes catin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .cat-bar{display:flex;align-items:center;gap:12px;padding-bottom:13px;margin-bottom:8px;border-bottom:3px solid var(--ink)}
+  .cat-ico{width:44px;height:44px;border-radius:13px;background:var(--green-soft);border:2px solid var(--ink);display:flex;align-items:center;justify-content:center;font-size:23px;transform:rotate(-4deg)}
+  .cat-bar h3{font-size:26px;flex:1}
+  .cat-n{font-family:"Bricolage Grotesque";font-weight:800;font-size:22px;color:var(--mustard);-webkit-text-stroke:1.5px var(--ink)}
+  .items{list-style:none;columns:260px;column-gap:46px}
+  .item{display:flex;align-items:flex-end;gap:8px;padding:11px 10px;border-radius:10px;break-inside:avoid;transition:background .14s var(--ease),transform .14s var(--ease)}
+  .item:hover{background:var(--green-soft);transform:translateX(3px)}
+  .item-name{font-weight:600;font-size:15px}
+  .item-dots{flex:1;border-bottom:2px dotted var(--line-2);transform:translateY(-4px);min-width:14px}
+  .item-price{font-family:"Bricolage Grotesque";font-weight:700;font-size:15.5px;color:var(--green-d);white-space:nowrap}
+
+  /* info — overlappende band */
+  .info{max-width:1180px;margin:30px auto;padding:0 26px}
+  .info-inner{background:var(--green);border:3px solid var(--ink);border-radius:26px;box-shadow:8px 8px 0 var(--ink);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:36px;color:#fff}
+  @media(max-width:760px){.info-inner{grid-template-columns:1fr;padding:30px}}
+  .info-inner h2{font-size:32px;grid-column:1/-1;margin-bottom:6px}
+  .info-block h4{font-family:"Bricolage Grotesque";font-size:16px;text-transform:uppercase;letter-spacing:1px;color:var(--mustard);margin-bottom:14px}
+  .hours{list-style:none}
+  .hours li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.18);font-size:15px;font-weight:500}
+  .hours li:last-child{border:0}.hours .cl{color:var(--mustard);font-weight:700}
+  .addr{font-size:16px;line-height:1.9;color:#dcefe1;font-weight:500}
+  .addr .big{font-family:"Bricolage Grotesque";font-size:24px;color:#fff;font-weight:800;display:block;margin-bottom:6px}
+  .maplink{display:inline-flex;gap:8px;margin-top:16px;background:#fff;color:var(--green-d);font-weight:700;padding:11px 18px;border-radius:24px;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);font-size:14px;transition:.15s var(--ease)}
+  .maplink:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+
+  /* cta */
+  .cta{max-width:1180px;margin:60px auto 90px;padding:0 26px}
+  .cta-band{background:var(--tomato);border:3px solid var(--ink);border-radius:28px;padding:54px 30px;color:#fff;box-shadow:9px 9px 0 var(--ink);text-align:center;position:relative;overflow:hidden}
+  .cta-band::after{content:"🍟🥪🍔🥖🧀";position:absolute;bottom:-6px;right:18px;font-size:38px;opacity:.22;letter-spacing:7px}
+  .cta-band h2{font-size:clamp(30px,4.5vw,46px);margin-bottom:12px}
+  .cta-band p{font-size:17px;margin-bottom:26px;font-weight:500;opacity:.95}
+  .cta-band .btn{background:#fff;color:var(--tomato-d)}
+
+  footer{background:var(--ink);color:#e9ddc9;padding:44px 0;text-align:center}
+  footer .fl{font-family:"Bricolage Grotesque";font-weight:800;font-size:22px;color:#fff;margin-bottom:8px}
+  footer .cr{margin-top:14px;font-size:12.5px;opacity:.6}
+
+  .reveal{opacity:0;transform:translateY(26px);transition:.6s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a href="#top" class="logo"><span class="mark">🥪</span><span class="nm">Broodjes van Eden<small>Wilrijk</small></span></a>
+    <nav class="htop">
+      <a href="#menu">Menu</a><a href="#info">Openingsuren</a><a href="#info">Locatie</a>
+      <a href="https://www.one2three.app/broodjesvaneden/menu" class="order">Bestel online →</a>
+    </nav>
+  </div>
+</header>
+
+<a id="top"></a>
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <span class="kick"><span class="d"></span>Broodjeszaak · Edenplein, Wilrijk</span>
+      <h1>
+        <span class="row"><span style="animation-delay:.05s">Dagvers.</span></span>
+        <span class="row"><span class="green" style="animation-delay:.15s">Ambachtelijk.</span></span>
+        <span class="row"><span class="tom" style="animation-delay:.25s">Gewoon lekker.</span></span>
+      </h1>
+      <p>Verse broodjes, smos, club & croques — plus knapperige frieten en snacks. Elke dag met liefde klaargemaakt.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-primary">🍽️ Bekijk de kaart</a>
+        <a href="https://www.one2three.app/broodjesvaneden/menu" class="btn btn-ghost">Bestel online</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>370+</b><span>gerechten</span></div>
+        <div><b>100%</b><span>vers bereid</span></div>
+        <div><b>Ma–Vr</b><span>07:30–15:00</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <span class="femoji e1">🥪</span><span class="femoji e2">🍟</span>
+      <div class="fcard a"><div class="ft">Populair</div><div class="fn">Broodje gezond</div><div class="fp">€3.60</div></div>
+      <div class="fcard b"><div class="ft">Specialiteit</div><div class="fn">Club Aardappelsla</div><div class="fp">€3.90</div></div>
+      <div class="seal">
+        <svg class="ring" viewBox="0 0 120 120"><defs><path id="cir" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+          <circle cx="60" cy="60" r="58" fill="var(--mustard)" stroke="var(--ink)" stroke-width="3"/>
+          <text font-family="Bricolage Grotesque" font-weight="800" font-size="13" letter-spacing="2" fill="var(--ink)"><textPath href="#cir" startOffset="0">100% VERS · DAGVERS · 100% VERS · DAGVERS · </textPath></text>
+        </svg>
+        <div class="mid">🌿</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker"><div class="ticker-track"><span class="tk">Vers belegd</span><span class="tk-dot">★</span><span class="tk">Dagverse broodjes</span><span class="tk-dot">★</span><span class="tk">Knapperige frieten</span><span class="tk-dot">★</span><span class="tk">Met liefde gemaakt</span><span class="tk-dot">★</span><span class="tk">Ambachtelijk</span><span class="tk-dot">★</span><span class="tk">Smos &amp; club</span><span class="tk-dot">★</span><span class="tk">Tot zo in Wilrijk</span><span class="tk-dot">★</span><span class="tk">Vers belegd</span><span class="tk-dot">★</span><span class="tk">Dagverse broodjes</span><span class="tk-dot">★</span><span class="tk">Knapperige frieten</span><span class="tk-dot">★</span><span class="tk">Met liefde gemaakt</span><span class="tk-dot">★</span><span class="tk">Ambachtelijk</span><span class="tk-dot">★</span><span class="tk">Smos &amp; club</span><span class="tk-dot">★</span><span class="tk">Tot zo in Wilrijk</span><span class="tk-dot">★</span></div></div>
+
+<div class="menu" id="menu">
+  <div class="lead reveal">
+    <span class="bignum">01</span>
+    <div><span class="kick2">Onze kaart</span><h2>Wat lust je vandaag?</h2></div>
+  </div>
+  <div class="layout">
+    <nav class="cnav"><a href="#broodjes" class="cnav-item"><span class="ci">🥪</span><span class="cn">Broodjes</span><span class="cc">72</span></a><a href="#smos-broodjes" class="cnav-item"><span class="ci">🥖</span><span class="cn">Smos Broodjes</span><span class="cc">5</span></a><a href="#speciale-broodjes" class="cnav-item"><span class="ci">⭐</span><span class="cn">Speciale broodjes</span><span class="cc">8</span></a><a href="#croques" class="cnav-item"><span class="ci">🧀</span><span class="cn">Croques</span><span class="cc">3</span></a><a href="#koude-schotels" class="cnav-item"><span class="ci">🍱</span><span class="cn">Koude schotels</span><span class="cc">12</span></a><a href="#salades" class="cnav-item"><span class="ci">🥗</span><span class="cn">Salades</span><span class="cc">1</span></a><a href="#warme-gerechten" class="cnav-item"><span class="ci">🍽️</span><span class="cn">Warme gerechten</span><span class="cc">7</span></a><a href="#klassieke-snacks" class="cnav-item"><span class="ci">🌭</span><span class="cn">Klassieke Snacks</span><span class="cc">21</span></a><a href="#speciale-snacks" class="cnav-item"><span class="ci">🔥</span><span class="cn">Speciale Snacks</span><span class="cc">20</span></a><a href="#snacks" class="cnav-item"><span class="ci">🍗</span><span class="cn">Snacks</span><span class="cc">46</span></a><a href="#bicky-burgers" class="cnav-item"><span class="ci">🍔</span><span class="cn">Bicky burgers</span><span class="cc">19</span></a><a href="#verse-brochetten" class="cnav-item"><span class="ci">🍢</span><span class="cn">Verse Brochetten</span><span class="cc">7</span></a><a href="#kroketten" class="cnav-item"><span class="ci">🥐</span><span class="cn">Kroketten</span><span class="cc">4</span></a><a href="#frieten" class="cnav-item"><span class="ci">🍟</span><span class="cn">Frieten</span><span class="cc">8</span></a><a href="#speciale-frieten" class="cnav-item"><span class="ci">🍟</span><span class="cn">Speciale Frieten</span><span class="cc">3</span></a><a href="#sauzen" class="cnav-item"><span class="ci">🥫</span><span class="cn">Sauzen</span><span class="cc">49</span></a><a href="#warme-sauzen" class="cnav-item"><span class="ci">🍯</span><span class="cn">Warme sauzen</span><span class="cc">9</span></a><a href="#frisdranken" class="cnav-item"><span class="ci">🥤</span><span class="cn">Frisdranken</span><span class="cc">49</span></a><a href="#melkdrankjes" class="cnav-item"><span class="ci">🥛</span><span class="cn">Melkdrankjes</span><span class="cc">4</span></a><a href="#bieren" class="cnav-item"><span class="ci">🍺</span><span class="cn">Bieren</span><span class="cc">11</span></a><a href="#koffiekoeken" class="cnav-item"><span class="ci">🥐</span><span class="cn">Koffiekoeken</span><span class="cc">5</span></a><a href="#taartjes" class="cnav-item"><span class="ci">🍰</span><span class="cn">Taartjes</span><span class="cc">4</span></a><a href="#brownies-muffins" class="cnav-item"><span class="ci">🧁</span><span class="cn">Brownies / Muffins</span><span class="cc">3</span></a></nav>
+    <div class="menu-main">
+        <section class="cat" id="broodjes">
+          <div class="cat-bar"><span class="cat-ico">🥪</span><h3>Broodjes</h3><span class="cat-n">01</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Aardappelsla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Broodje gezond</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Gerookte zalm</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Hesp</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kaas</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kaas en hesp</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kip curry</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Martino</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Préparé</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Américain (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Boulet (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.95</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Brie</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Broodje mayonaise</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Aardappelsla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Américain (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.10</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Boulet (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.85</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Brie</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Broodje mayonaise</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Eiersla (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Gerookte zalm (plakjes)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Italiaanse ham</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Kaas</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Kaassla (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Kip curry</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Kip, gegrild à la minute</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.75</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Kip natuur (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.05</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Kip (verse kippestukjes)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.85</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Komkommersla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Krabsla (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Kruidenkaas</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.85</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Langoustinesla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Martino (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Mozarella + tomaat</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Pittasla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Rosbeef</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Salami</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.85</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Scampi in curry</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Seldersla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Tonijn pikant</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Tonijnsla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Vleessla (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.05</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Zalmsla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Eiersla (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Gerookte zalm (plakjes)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Grijze garnaalsla (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kaas + hesp</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kaassla (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.10</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kip Andalouse (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kip, gegrild à la minute</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.85</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kip Hawaï</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kip natuur (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.15</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kip pikant</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Komkommersla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.10</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Krabsla (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kruidenkaas</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.95</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Langoustinesla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mozarella + tomaat</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Pittasla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Rosbeef</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Salami</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.95</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Scampi in curry</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Seldersla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Smos (club kaas + hesp)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Tonijn pikant</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Vleessla (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.15</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Italiaanse ham</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Grijze garnaalsla (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Hesp + aardappelsla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Hesp</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Kip pikant</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Hesp + aardappelsla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Martino (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="smos-broodjes">
+          <div class="cat-bar"><span class="cat-ico">🥖</span><h3>Smos Broodjes</h3><span class="cat-n">02</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Broodje Bicky boulet</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Broodje Curryworst</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Broodje Curryworst Special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Broodje Kroket</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Broodje Saté</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="speciale-broodjes">
+          <div class="cat-bar"><span class="cat-ico">⭐</span><h3>Speciale broodjes</h3><span class="cat-n">03</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Club Gerookte zalm + kruidenkaas</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€6.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club gezond</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.15</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Kip + Komkommersla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Gerookte zalm + eiersla (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.10</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Rosbeef + Seldersla</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.65</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Slank</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.55</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Club Gerookte zalm + eiersla (specialiteit)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€6.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Brie Special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.10</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="croques">
+          <div class="cat-bar"><span class="cat-ico">🧀</span><h3>Croques</h3><span class="cat-n">04</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Croque Hawaï met groenten</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Croque Monsieur in het vuistje</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Croque Monsieur met groenten</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.40</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="koude-schotels">
+          <div class="cat-bar"><span class="cat-ico">🍱</span><h3>Koude schotels</h3><span class="cat-n">05</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Hesp</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€7.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Natuur</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€6.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Américainschotel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€8.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Gerookte zalmschotel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€9.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Grijzegarnaalschotel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€13.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Groentenschotel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Hespenschotel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€7.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kipschotel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€8.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Langoustineschotel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€9.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mozarella + tomaatschotel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€7.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Rosbeefschotel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€9.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Tonijnschotel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€7.90</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="salades">
+          <div class="cat-bar"><span class="cat-ico">🥗</span><h3>Salades</h3><span class="cat-n">06</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Americain Preparé</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€14.90</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="warme-gerechten">
+          <div class="cat-bar"><span class="cat-ico">🍽️</span><h3>Warme gerechten</h3><span class="cat-n">07</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Rigatone met bolognaisesaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Rigatone met carbonarasaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Spaghetti</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Stoofvlees met varkenswangetjes en kasteelbier</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€9.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Balletjes in tomatensaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€9.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Vol-au-Vent</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€9.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Gyros</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€9.90</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="klassieke-snacks">
+          <div class="cat-bar"><span class="cat-ico">🌭</span><h3>Klassieke Snacks</h3><span class="cat-n">08</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Frikandel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Frikandel special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Viandel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Viandel Special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Boulet</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Boulet Special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mexicano</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kipnuggets (5 stuks)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kipfingers (6 stuks)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mini-Loempia’s (6 stuks)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kipcorn</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Grizzly</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Visbrochet</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Sito (Kalkoenstick)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bitterballen (5 stuks)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Zigeunerstick</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Lookworst</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Jagersworst</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Lookworst special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Jagerworst Special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Taco</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.90</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="speciale-snacks">
+          <div class="cat-bar"><span class="cat-ico">🔥</span><h3>Speciale Snacks</h3><span class="cat-n">09</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Ragouzi</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mammoet</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Viandel spicy</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Lucifer</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mini-Lucifer</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Vuurvreter</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kaassouflé</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bockworst</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bockworst Special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Krokidel XXL</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Krokidel XXL Special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Frikandel XXL</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Frikandel XXL Special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€6.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Gaaky Boulet</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Gaaky Boulet Special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Chick and Chili</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bamiballetjes</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Ambiorix</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kiploempia</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mini-Megamix</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.90</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="snacks">
+          <div class="cat-bar"><span class="cat-ico">🍗</span><h3>Snacks</h3><span class="cat-n">10</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Aardappelkroket</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bamischijf</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bamiblok pikant (VEGI)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Berehap/grizly</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bereklauw / berepoot</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bitterballen</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Boulet gebakken</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Boulet Special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Cervela gebakken</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Cervela look gebakken(playboy)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Cervela look special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Cervela special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Chick- in Chili</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Chix fingers</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Curryworst</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Curryworst special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Curryworst XXL</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Garnaalkroket</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Goulashkroket</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Groente-kaasschijf (VEGI)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kaaskroket (VEGI)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kaassoufflé (VEGI)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kippets</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kipsaté</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Loempia</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Lucifer</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mini Megamix</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mini loempia (VEGI) + portie zoetzure saus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mosselen</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Ragouzi</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Ribster</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Saté</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Saté shaslick</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Sitostick</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Smulbox</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Spablo</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Taco</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Viandel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Viandel special</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Visstick</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Vleeskroket</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Vuurvreter</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Pizza-baguette</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Worstenbroodje</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kaasflap</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.55</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Fish Burger</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="bicky-burgers">
+          <div class="cat-bar"><span class="cat-ico">🍔</span><h3>Bicky burgers</h3><span class="cat-n">11</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Hamburgerschijf</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bicky Burger</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bicky Cheese burger</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bicky Crunchy Chicken</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bicky Rib Burger</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Rallyburger</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€6.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bicky Royal</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€7.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bicky Fish</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bicky Chickless (VEGGIE)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Chicken Pepper</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bacon Burger</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bicky Crispy</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Cheesepepper</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Beefburger</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bicky Wrap</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bicky Cheeseburger</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.10</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bicky Chickenburger Crispy</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bicky Royal cheese</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€6.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Bicky Vegiburger (VEGI)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="verse-brochetten">
+          <div class="cat-bar"><span class="cat-ico">🍢</span><h3>Verse Brochetten</h3><span class="cat-n">12</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Kippenboutjes</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Ardeense Brochet</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mergueze</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Merguezebrochet</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kleine Brochet</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Middel Brochet</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€6.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mixbrochet</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€7.90</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="kroketten">
+          <div class="cat-bar"><span class="cat-ico">🥐</span><h3>Kroketten</h3><span class="cat-n">13</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Vleeskroket</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kaaskroket</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Garnaalkroket</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€6.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mozzarellasticks</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.90</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="frieten">
+          <div class="cat-bar"><span class="cat-ico">🍟</span><h3>Frieten</h3><span class="cat-n">14</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Kinderbakje</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Kleintje</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Middel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Groot</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Familiepak</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€9.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Smullbox</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€9.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Klein</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mini</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.10</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="speciale-frieten">
+          <div class="cat-bar"><span class="cat-ico">🍟</span><h3>Speciale Frieten</h3><span class="cat-n">15</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Patatje OORLOG viandelle</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€10.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Patatje OORLOG mexicano</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€11.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Patatje OORLOG frikandel</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€10.50</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="sauzen">
+          <div class="cat-bar"><span class="cat-ico">🥫</span><h3>Sauzen</h3><span class="cat-n">16</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Mayonaise</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Ketchup</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Curryketchup</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Andalouse</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Samourai (pikant)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Cocktail</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Américaine</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Tartaar</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Toscaanse</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Gele Curry</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Provencaalse</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Gele Bicky saus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Roze Pepersaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Loempiasaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Pickles</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Hannibalsaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">witte pepersaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">hamburgersaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Brasilsaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Speciale saus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mosterd</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Joppiesaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mammoetsaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">looksaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mysterie saus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Curry Ketchup</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Pepersaus warm</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Boter</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Cocktailsaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Martinosaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Pesto</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Provencettesaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Samoerai</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie americain</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie andalouse</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie barbequesaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie cocktailsaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie mammoet (Hannibal)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie hollandse mayonaise (zoete)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie joppiesaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie ketchup curry</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie ketchup tomaat</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie koude curry</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie tomataise</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie mayonaise</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie pickles</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie samurai</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie tartaar eigenmaak</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Portie zoetzure saus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€0.80</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="warme-sauzen">
+          <div class="cat-bar"><span class="cat-ico">🍯</span><h3>Warme sauzen</h3><span class="cat-n">17</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Stoofvleessaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Champignonsaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Tomatensaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Warme Pepersaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€3.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Pot Goulash 100cc</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Pot Pindasaus / satésaus</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Pot Stoofvlees 200cc</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€5.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Pot Stoofvleessaus 200cc</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Pot Warme curry</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.30</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="frisdranken">
+          <div class="cat-bar"><span class="cat-ico">🥤</span><h3>Frisdranken</h3><span class="cat-n">18</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">AA-Drink - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Aquarius Blue Ice - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Aquarius grape - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Aquarius lemon - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Aquarius orange - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Canada dry - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Chaudfontaine – plat water (33cl)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Chaudfontaine – spuitwater (33cl)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Coca-cola - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Coca-cola - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Coca-cola light - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Coca-cola light lemon - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Coca-cola light lemon - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Coca-cola zero - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Coca-cola zero - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Fanta lemon - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Fanta lemon - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Fanta orange - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Fanta orange - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Gini - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Lipton Ice Tea - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Lipton Ice Tea - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.10</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Lipton Ice Tea zero - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Minute Maid appel - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Minute Maid Multi - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Minute Maid Orange - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Nestea Green - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Nestea Ice Tea - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Nestea Peach - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Nestea Peach - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.10</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Schweppes Agrum - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Schweppes Agrum light - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Sprite - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Sprite - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Sprite zero - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Sprite zero - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Coca-cola light - 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Aquarius Red Blast - 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.70</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Cola 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Cola 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Cola zero 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Cola zero 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Fanta 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Ice Tea 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Jupiler 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.90</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Red Bull 25cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Spa blauw 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Spa rood 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Sprite 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.80</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="melkdrankjes">
+          <div class="cat-bar"><span class="cat-ico">🥛</span><h3>Melkdrankjes</h3><span class="cat-n">19</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Cécémel chocolademelk – 25cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.80</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Fristi – 25cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.85</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Inza chocolademelk – 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.65</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Inza melk – 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.65</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="bieren">
+          <div class="cat-bar"><span class="cat-ico">🍺</span><h3>Bieren</h3><span class="cat-n">20</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Jupiler (fles)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Stella (fles)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Leffe Blond (fles)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Omer (fles)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€4.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Jupiler (blik)</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.50</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Burn – 25cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.45</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Jupiler – 33cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.10</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Monster Energy – 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.75</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Monster Ripper – 50cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.75</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Nalu – 25cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.40</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Red Bull – 25cl</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.65</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="koffiekoeken">
+          <div class="cat-bar"><span class="cat-ico">🥐</span><h3>Koffiekoeken</h3><span class="cat-n">21</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Chocoladebroodje</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Croissant</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Croissant met choco</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.60</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Ronde Suisse</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.30</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Appelflap</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.45</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="taartjes">
+          <div class="cat-bar"><span class="cat-ico">🍰</span><h3>Taartjes</h3><span class="cat-n">22</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Frangipannetaartje</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Rijsttaartje</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.00</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Mattetaartje</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.20</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Normandisch appeltaartje</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.20</span>
+          </li></ul>
+        </section>
+        <section class="cat" id="brownies-muffins">
+          <div class="cat-bar"><span class="cat-ico">🧁</span><h3>Brownies / Muffins</h3><span class="cat-n">23</span></div>
+          <ul class="items">
+          <li class="item">
+            <span class="item-name">Brownie</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.85</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Muffin – Chocolade</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€2.15</span>
+          </li>
+          <li class="item">
+            <span class="item-name">Vanillecake</span>
+            <span class="item-dots"></span>
+            <span class="item-price">€1.00</span>
+          </li></ul>
+        </section></div>
+  </div>
+</div>
+
+<section class="info" id="info">
+  <div class="info-inner reveal">
+    <h2>Kom langs in Wilrijk</h2>
+    <div class="info-block">
+      <h4>⏰ Openingsuren</h4>
+      <ul class="hours">
+        <li><b>Maandag</b><span>07:30 – 15:00</span></li>
+        <li><b>Dinsdag</b><span>07:30 – 15:00</span></li>
+        <li><b>Woensdag</b><span>07:30 – 15:00</span></li>
+        <li><b>Donderdag</b><span>07:30 – 15:00</span></li>
+        <li><b>Vrijdag</b><span>07:30 – 14:30</span></li>
+        <li><b>Zaterdag</b><span class="cl">Gesloten</span></li>
+        <li><b>Zondag</b><span class="cl">Gesloten</span></li>
+      </ul>
+    </div>
+    <div class="info-block">
+      <h4>📍 Locatie</h4>
+      <div class="addr"><span class="big">Broodjes van Eden</span>Edenplein 15<br>2610 Wilrijk<br>België</div>
+      <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Edenplein+15+2610+Wilrijk" target="_blank">🗺️ Open in Maps</a>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="cta-band reveal">
+    <h2>Honger gekregen?</h2>
+    <p>Bestel in een paar klikken online — klaar wanneer jij langskomt.</p>
+    <a href="https://www.one2three.app/broodjesvaneden/menu" class="btn">🛒 Bestel nu online</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fl">🥪 Broodjes van Eden</div>
+    <div>Edenplein 15, 2610 Wilrijk · Ma–Vr geopend</div>
+    <div class="cr">Website ontworpen door Tristan Webstudio</div>
+  </div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
+  document.querySelectorAll(".reveal").forEach(e=>io.observe(e));
+
+  // Categorie-filter: toon één categorie tegelijk (veel minder scrollen)
+  const navItems=[...document.querySelectorAll(".cnav-item")];
+  const sections=[...document.querySelectorAll(".cat")];
+  function toon(id,scroll){
+    sections.forEach(s=>s.classList.toggle("show",s.id===id));
+    navItems.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+id));
+    if(scroll){const t=document.querySelector(".layout");if(t)t.scrollIntoView({behavior:"smooth",block:"start"});}
+  }
+  navItems.forEach(a=>a.addEventListener("click",e=>{e.preventDefault();toon(a.getAttribute("href").slice(1),true);}));
+  if(sections[0])toon(sections[0].id,false);   // eerste categorie standaard tonen
+</script>
+</body>
+</html>
