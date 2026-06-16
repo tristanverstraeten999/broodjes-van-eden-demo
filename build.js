@@ -77,6 +77,7 @@ const html = `<!DOCTYPE html>
   header{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:3px solid var(--ink)}
   .bar{display:flex;align-items:center;justify-content:space-between;padding:13px 26px;max-width:1180px;margin:0 auto}
   .logo{display:flex;align-items:center;gap:11px}
+  .hdr-logo{height:52px;width:auto;display:block}
   .logo .mark{width:42px;height:42px;border-radius:13px;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;transform:rotate(-6deg);box-shadow:3px 3px 0 var(--ink)}
   .logo .nm{font-family:"Bricolage Grotesque";font-weight:800;font-size:19px;line-height:.95}
   .logo .nm small{display:block;font-family:"DM Sans";font-weight:600;font-size:10px;letter-spacing:2px;color:var(--green);text-transform:uppercase}
@@ -123,6 +124,8 @@ const html = `<!DOCTYPE html>
   .femoji{position:absolute;font-size:62px;filter:drop-shadow(4px 6px 8px rgba(34,26,17,.2));animation:floaty 6s ease-in-out infinite}
   .femoji.e1{top:0;right:24%;animation-delay:.4s} .femoji.e2{bottom:14%;left:14%;font-size:50px;animation-delay:1.1s}
   @keyframes floaty{0%,100%{translate:0 0}50%{translate:0 -14px}}
+  .logo-sign{position:absolute;top:48%;left:50%;transform:translate(-50%,-50%) rotate(-3deg);width:90%;background:var(--card);border:3px solid var(--ink);border-radius:24px;padding:30px 26px;box-shadow:8px 8px 0 var(--ink);z-index:2;animation:floaty 8s ease-in-out infinite}
+  .logo-sign img{width:100%;display:block}
   .seal{position:absolute;top:38%;left:50%;width:128px;height:128px;margin:-64px 0 0 -64px;z-index:4}
   .seal .ring{width:100%;height:100%;animation:spin 16s linear infinite}
   @keyframes spin{to{transform:rotate(360deg)}}
@@ -197,7 +200,7 @@ const html = `<!DOCTYPE html>
   .cta-band .btn{background:#fff;color:var(--tomato-d)}
 
   footer{background:var(--ink);color:#e9ddc9;padding:44px 0;text-align:center}
-  footer .fl{font-family:"Bricolage Grotesque";font-weight:800;font-size:22px;color:#fff;margin-bottom:8px}
+  footer .ft-logo{height:92px;width:auto;display:block;margin:0 auto 10px}
   footer .cr{margin-top:14px;font-size:12.5px;opacity:.6}
 
   .reveal{opacity:0;transform:translateY(26px);transition:.6s var(--ease)}
@@ -209,7 +212,7 @@ const html = `<!DOCTYPE html>
 
 <header>
   <div class="bar">
-    <a href="#top" class="logo"><span class="mark">🥪</span><span class="nm">Broodjes van Eden<small>Wilrijk</small></span></a>
+    <a href="#top" class="logo"><img src="logo-dark.png" class="hdr-logo" alt="Broodjes van Eden — Wilrijk"></a>
     <nav class="htop">
       <a href="#menu">Menu</a><a href="#info">Openingsuren</a><a href="#info">Locatie</a>
       <a href="https://www.one2three.app/broodjesvaneden/menu" class="order">Bestel online →</a>
@@ -240,15 +243,8 @@ const html = `<!DOCTYPE html>
     </div>
     <div class="hero-visual">
       <span class="femoji e1">🥪</span><span class="femoji e2">🍟</span>
-      <div class="fcard a"><div class="ft">Populair</div><div class="fn">${esc(hero1 ? hero1.naam : "Broodje gezond")}</div><div class="fp">€${esc(hero1 ? hero1.prijs : "3.60")}</div></div>
-      <div class="fcard b"><div class="ft">Specialiteit</div><div class="fn">${esc(hero2 ? hero2.naam : "Club Kaas")}</div><div class="fp">€${esc(hero2 ? hero2.prijs : "3.40")}</div></div>
-      <div class="seal">
-        <svg class="ring" viewBox="0 0 120 120"><defs><path id="cir" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
-          <circle cx="60" cy="60" r="58" fill="var(--mustard)" stroke="var(--ink)" stroke-width="3"/>
-          <text font-family="Bricolage Grotesque" font-weight="800" font-size="13" letter-spacing="2" fill="var(--ink)"><textPath href="#cir" startOffset="0">100% VERS · DAGVERS · 100% VERS · DAGVERS · </textPath></text>
-        </svg>
-        <div class="mid">🌿</div>
-      </div>
+      <div class="logo-sign"><img src="logo-dark.png" alt="Broodjes van Eden"></div>
+      <div class="fcard b"><div class="ft">Populair</div><div class="fn">${esc(hero1 ? hero1.naam : "Broodje gezond")}</div><div class="fp">€${esc(hero1 ? hero1.prijs : "3.60")}</div></div>
     </div>
   </div>
 </section>
@@ -299,7 +295,7 @@ const html = `<!DOCTYPE html>
 
 <footer>
   <div class="wrap">
-    <div class="fl">🥪 Broodjes van Eden</div>
+    <img src="logo-white.png" class="ft-logo" alt="Broodjes van Eden">
     <div>Edenplein 15, 2610 Wilrijk · Ma–Vr geopend</div>
     <div class="cr">Website ontworpen door Tristan Webstudio</div>
   </div>
