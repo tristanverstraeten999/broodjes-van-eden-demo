@@ -230,7 +230,7 @@ const html = `<!DOCTYPE html>
         <span class="row"><span class="green" style="animation-delay:.15s">Ambachtelijk.</span></span>
         <span class="row"><span class="tom" style="animation-delay:.25s">Gewoon lekker.</span></span>
       </h1>
-      <p>Verse broodjes, smos, club & croques — plus knapperige frieten en snacks. Elke dag met liefde klaargemaakt.</p>
+      <p>Verse broodjes, smos, club & croques — met lekkere koffie en iets zoets erbij. Elke dag met liefde klaargemaakt.</p>
       <div class="hero-cta">
         <a href="#menu" class="btn btn-primary">🍽️ Bekijk de kaart</a>
         <a href="https://www.one2three.app/broodjesvaneden/menu" class="btn btn-ghost">Bestel online</a>
